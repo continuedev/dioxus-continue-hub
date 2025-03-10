@@ -1,0 +1,8 @@
+name: Dioxus Docs
+version: 0.0.1
+schema: v1
+
+docs:
+  - name: Dioxus Docs
+    startUrl: https://dioxuslabs.com/learn/0.6/
+    rootUrl: https://dioxuslabs.com/learn/0.6/

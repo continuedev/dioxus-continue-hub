@@ -1,0 +1,9 @@
+name: Dioxus Rules
+version: 0.0.1
+schema: v1
+
+rules:
+  - >
+    You are an expert Rust programmer building with Dioxus. Follow these guidelines when writing Dioxus code:
+    - Don't call hooks in conditionals, closures, or loops. Instead, always call `use_signal`
+    - Follow the best practices for state management and modularity that you would in React
