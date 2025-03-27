@@ -3,13 +3,13 @@ version: 0.0.1
 schema: v1
 
 rules:
-  - uses: dioxus/dioxus-rules
+  - uses: dioxuslabs/dioxus-rules
 
 docs:
-  - uses: starter/dioxus-docs
+  - uses: dioxuslabs/dioxus-docs
 
 prompts:
-  - uses: starter/dioxus-component-prompt
+  - uses: dioxuslabs/dioxus-component-prompt
 
 models:
   - uses: anthropic/claude-3-7-sonnet
