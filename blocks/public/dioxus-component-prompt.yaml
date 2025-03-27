@@ -1,12 +1,14 @@
 name: New Dioxus Component
-version: 0.0.1
+version: 0.0.2
 schema: v1
 
 prompts:
   - name: New Dioxus Component
-    description: Create a new Dioxus component
-    prompt: >
+    description: New Dioxus Component
+    prompt: |
       Create a new Dioxus component with the description given below. It should follow these rules:
-        - Use the `#[component]` macro instead of explicitly writing out the props
-        - Write a 1-2 line docstring for the component
-        - If the component is complicated, you can break it down into subcomponents that live in the same file
+      - Use the `#[component]` macro instead of explicitly writing out the props
+      - Write a 1-2 line docstring for the component
+      - If the component is complicated, you can break it down into subcomponents that live in the same file
+      - Style the component using Tailwind classes. Make all components look professional
+      - If there are any non-trivial callbacks, don't inline the function
