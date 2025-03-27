@@ -12,29 +12,17 @@ prompts:
   - uses: dioxuslabs/dioxus-component-prompt
 
 models:
-  - uses: anthropic/claude-3-7-sonnet
-    with:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-    override:
-      roles:
-        - chat
-        - edit
-        - apply
-
   - uses: mistral/codestral
     with:
       MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-    override:
-      roles:
-        - autocomplete
 
-  - uses: voyageai/voyage-code-3
+  - uses: mistral/mistral-large
     with:
-      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
 
-  - uses: voyageai/rerank-2
+  - uses: mistral/mistral-embed
     with:
-      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
 
 context:
   - uses: continuedev/diff-context
